@@ -36,10 +36,10 @@
         <div class="container">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#"><span class="glyphicon glyphicon-home"
-                 aria-hidden="true"></span> Home</a></li>
-                 <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"
-                     aria-hidden="true"></span> About</a></li>
-                     <li class="dropdown">
+                   aria-hidden="true"></span> Home</a></li>
+                   <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"
+                       aria-hidden="true"></span> About</a></li>
+                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                         role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt"
                         aria-hidden="true"></span> Menu <span class="caret"></span></a>
@@ -80,14 +80,14 @@
                             <div class="form-group"><label class="sr-only" for="password">Password</label><input  type="password" class="form-control" id="password" placeholder="Password"> </div> 
                             <div class="form-group vcenter"><label><input type="checkbox" />Remember me</label></div> 
                             <div class="form-group"><button type="submit" class="btn btn-info">Sign in</button><button type="button" class="btn btn-default btn-sm"
-                             data-dismiss="modal">Cancel</button></div>
-                         </form> 
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
-     <header class="jumbotron" >
+                               data-dismiss="modal">Cancel</button></div>
+                           </form> 
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <header class="jumbotron" >
 
         <!-- Main component for a primary marketing message or call to action -->
 
@@ -155,11 +155,11 @@
                         </div>
                         <div class="form-group has-feedback">
                             <div class="col-sm-6 col-sm-push-6 right"><input type="submit" class="btn btn-info" value="Reserve"><button type="button" class="btn btn-default btn-sm"
-                             data-dismiss="modal" style="margin-left:5px">Cancel</button></div>
-                         </div>
+                               data-dismiss="modal" style="margin-left:5px">Cancel</button></div>
+                           </div>
 
-                     </form>
-                     <div class="alert alert-warning alert-dismissible"  role="alert">
+                       </form>
+                       <div class="alert alert-warning alert-dismissible"  role="alert">
                         <button type="button" class="close" data-dismiss="alert"    aria-label="Close">         <span aria-hidden="true">&times;</span>
                         </button>       
                         <strong>Warning:</strong>: Please <a href="tel:+85212345678" class="alert-link">call</a> us to reserve for more than six guests.
@@ -171,7 +171,7 @@
     <div class="container">
 
         <div class="row row-content">
-           <div class="col-xs-12">
+         <div class="col-xs-12">
             <div class="carousel slide" data-ride="carousel" id="mycarousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -213,19 +213,19 @@
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p>Award winning three-star Michelin chef with wide
-                         International experience having worked closely with
-                         whos-who in the culinary world, he specializes in
-                         creating mouthwatering Indo-Italian fusion experiences.
-                     </p>
-                     <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
-                 </div>
-             </div>
-         </div>
+                           International experience having worked closely with
+                           whos-who in the culinary world, he specializes in
+                           creating mouthwatering Indo-Italian fusion experiences.
+                       </p>
+                       <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                   </div>
+               </div>
+           </div>
 
-     </div>
+       </div>
 
-     <!-- Controls -->
-     <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+       <!-- Controls -->
+       <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
@@ -233,6 +233,14 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+    <div class="btn-group" id="carouselButtons">
+        <button class="btn btn-danger btn-xs" id="carousel-pause">
+            <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-danger btn-xs" id="carousel-play">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+        </button>
+    </div>
 </div>
 </div>
 <div class="row row-content">
@@ -300,14 +308,14 @@
                 <h2 class="media-heading">Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide
-                 International experience having worked closely with
-                 whos-who in the culinary world, he specializes in
-                 creating mouthwatering Indo-Italian fusion experiences.
-             </p>
-             <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
-         </div>
-     </div>
- </div>
+                   International experience having worked closely with
+                   whos-who in the culinary world, he specializes in
+                   creating mouthwatering Indo-Italian fusion experiences.
+               </p>
+               <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+           </div>
+       </div>
+   </div>
 </div>
 <!-- <div class="row row-content">
     <div class="col-xs-12 col-sm-3">
@@ -399,6 +407,17 @@
         $('[data-toggle="tooltip"]').tooltip();
     });
 </script>
+ <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+                          $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+                        $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 </body>
 
 </html>
